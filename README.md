@@ -21,7 +21,7 @@ npm.cmd run build
 
 ## 维护地图内容
 
-已接入 4 个分类、12 张地图。图片位于 `public/maps/`，分类和地图清单位于 `src/data/maps.ts`。
+已接入 7 个分类、15 张地图。图片位于 `public/maps/`，分类和地图清单位于 `src/data/maps.ts`。
 
 新增地图时：
 
@@ -51,4 +51,4 @@ npm.cmd run build
 - 输出目录：`dist`
 - Node.js：20 或更高版本
 
-仓库远程地址已设置为 `https://github.com/chen-le-802/my-idv-jysj.git`。当前执行环境无法连接 GitHub；本地完成后，在网络正常的电脑上推送即可。
+仓库远程地址：`https://github.com/chen-le-802/my-idv-jysj.git`。

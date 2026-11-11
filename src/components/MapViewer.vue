@@ -24,13 +24,22 @@ let dragOrigin: { pointerId: number; x: number; y: number; panX: number; panY: n
 let pinchStartDistance = 0
 let pinchStartZoom = 1
 
+function preloadLayers() {
+  props.map.layers.forEach((layer) => {
+    const image = new Image()
+    image.src = layer.image
+  })
+}
+
 watch(
   () => props.map.id,
   () => {
     activeLayerId.value = props.map.layers[0]?.id ?? ''
     rotation.value = 0
     resetView()
+    preloadLayers()
   },
+  { immediate: true },
 )
 
 function resetView() {

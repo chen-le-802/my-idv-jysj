@@ -20,7 +20,7 @@ body.is-viewer-open { overflow: hidden; }
 
 .category-list { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; border: 1px solid #ededed; border-radius: 10px; background: #fff; box-shadow: 0 4px 12px rgb(0 0 0 / 4%); }
 .category-button { flex: 0 0 128px; min-height: 38px; padding: 7px 10px; border: 0; border-radius: 6px; background: transparent; color: #747474; cursor: pointer; font-size: 13px; }
-.category-button--active, .category-button--active:hover, .category-button--active:focus-visible { background: #202020; color: #fff; font-weight: 700; box-shadow: none; }
+.category-button--active, .category-button--active:hover, .category-button--active:focus-visible { background: #3b3b3b; color: #fff; font-weight: 700; box-shadow: none; }
 .category-button small { margin-left: 4px; font-family: 'DM Mono', monospace; font-size: 11px; opacity: .72; }
 .guide-button { margin-left: auto; padding: 2px 0; border: 0; background: transparent; color: #555; cursor: pointer; font-size: 13px; font-weight: 600; letter-spacing: .03em; white-space: nowrap; }
 .guide-button:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }

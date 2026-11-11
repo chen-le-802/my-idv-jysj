@@ -64,6 +64,7 @@ body.is-viewer-open { overflow: hidden; }
 .viewer__canvas--zoomed { cursor: grab; }
 .viewer__canvas--zoomed:active { cursor: grabbing; }
 .viewer__map { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; animation: fade-in .18s ease-out; }
+.viewer__map--single { width: auto; height: calc(100dvh - 92px); max-width: 100%; max-height: none; }
 .viewer-side { z-index: 1; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgb(196 198 190 / 28%); border-radius: 50%; background: rgb(19 21 20 / 42%); color: rgb(238 239 232 / 72%); cursor: pointer; font-size: 26px; opacity: .62; backdrop-filter: blur(3px); transition: background .2s, border-color .2s, color .2s, opacity .2s; }
 .viewer-side--previous { position: absolute; top: 50%; left: 10px; transform: translateY(-50%); }
 .viewer-side--next { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
@@ -99,6 +100,7 @@ body.is-viewer-open { overflow: hidden; }
   .layer-tab { padding: 0 15px; font-size: 14px; }
   .layer-tab--active::after { right: 12px; left: 12px; }
   .viewer__canvas { padding: 6px 0; }
+  .viewer__map--single { height: calc(100dvh - 72px); }
   .viewer-side { width: 34px; height: 34px; font-size: 21px; }
   .viewer-side--previous { left: 4px; }
   .viewer-side--next { right: 4px; }

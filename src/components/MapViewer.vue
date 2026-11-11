@@ -136,7 +136,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 </script>
 
 <template>
-  <section class="viewer" role="dialog" aria-modal="true" :aria-label="`${map.name} 地图查看器`">
+  <section class="viewer" :class="{ 'viewer--single': !canSwitchLayers }" role="dialog" aria-modal="true" :aria-label="`${map.name} 地图查看器`">
     <header class="viewer__header">
       <div>
         <p class="viewer__eyebrow">地图查看器</p>
@@ -175,6 +175,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
           v-if="activeLayer"
           :key="`${map.id}-${activeLayer.id}`"
           class="viewer__map"
+          :class="{ 'viewer__map--single': !canSwitchLayers }"
           :style="mapStyle"
           :src="activeLayer.image"
           :alt="`${map.name}：${activeLayer.label}`"

@@ -10,7 +10,6 @@ defineEmits<{ select: [map: MapEntry] }>()
     <img class="map-card__image" :src="map.cover" :alt="`${map.name} 的封面`" loading="lazy" />
     <span class="map-card__footer">
       <span class="map-card__name">{{ map.name }}</span>
-      <span class="map-card__hint">查看图层 <span aria-hidden="true">↗</span></span>
     </span>
   </button>
 </template>

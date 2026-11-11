@@ -68,9 +68,9 @@ body.is-viewer-open { overflow: hidden; }
 .viewer-side { z-index: 1; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgb(196 198 190 / 28%); border-radius: 50%; background: rgb(19 21 20 / 42%); color: rgb(238 239 232 / 72%); cursor: pointer; font-size: 26px; opacity: .62; backdrop-filter: blur(3px); transition: background .2s, border-color .2s, color .2s, opacity .2s; }
 .viewer-side--previous { position: absolute; top: 50%; left: 10px; transform: translateY(-50%); }
 .viewer-side--next { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
-.viewer-side:hover, .viewer-side:focus-visible { border-color: rgb(238 239 232 / 65%); background: rgb(42 44 41 / 78%); color: #fffdf5; opacity: 1; }
+.viewer-side:hover, .viewer-side:focus-visible { border-color: rgb(238 239 232 / 42%); background: rgb(42 44 41 / 56%); color: rgb(238 239 232 / 78%); opacity: .62; }
 .viewer-control:hover { background: #2a2c29; color: #fffdf5; }
-.viewer-controls { position: absolute; z-index: 2; right: 8px; bottom: 18px; display: flex; overflow: hidden; border: 1px solid #494b46; border-radius: 8px; background: #1d201e; }
+.viewer-controls { position: absolute; z-index: 2; bottom: 18px; left: 8px; display: flex; overflow: hidden; border: 1px solid #494b46; border-radius: 8px; background: #1d201e; }
 .viewer-control { display: grid; width: 38px; height: 38px; place-items: center; border: 0; border-left: 1px solid #494b46; background: transparent; color: #c4c6be; cursor: pointer; font-size: 21px; transition: background .2s, color .2s; }
 .viewer-control:first-child { border-left: 0; }
 .viewer-control--label { width: 48px; font-family: 'DM Mono', monospace; font-size: 11px; }
@@ -103,7 +103,7 @@ body.is-viewer-open { overflow: hidden; }
   .viewer-side { width: 34px; height: 34px; font-size: 21px; }
   .viewer-side--previous { left: 4px; }
   .viewer-side--next { right: 4px; }
-  .viewer-controls { right: 1px; bottom: 10px; }
+  .viewer-controls { bottom: 10px; left: 1px; }
   .viewer-control { width: 32px; height: 34px; font-size: 18px; }
   .viewer-control--label { width: 42px; font-size: 10px; }
 }

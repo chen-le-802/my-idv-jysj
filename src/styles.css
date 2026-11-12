@@ -107,3 +107,17 @@ body.is-viewer-open { overflow: hidden; }
   .viewer-control { width: 32px; height: 34px; font-size: 18px; }
   .viewer-control--label { width: 42px; font-size: 10px; }
 }
+
+@media (orientation: landscape) and (max-height: 900px) {
+  .viewer { padding: 6px 18px; }
+  .viewer__header { min-height: 38px; }
+  .viewer__eyebrow, .viewer__tip { display: none; }
+  .viewer h2 { font-size: 14px; }
+  .layer-tabs { min-height: 34px; margin-top: 2px; }
+  .layer-tab { height: 28px; padding-right: 16px; padding-left: 16px; }
+  .layer-tab--active::after { right: 13px; left: 13px; }
+  .viewer__canvas { padding: 4px 0; }
+  .viewer__map { height: calc(100dvh - 106px); max-width: 100%; max-height: 100%; }
+  .viewer__map--single { height: calc(100dvh - 62px); }
+  .viewer-controls { bottom: 6px; }
+}
